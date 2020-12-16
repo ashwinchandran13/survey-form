@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body> 
+  <div id="container">
+  <h1 id="title">Personality Survey Forum</h1>
+  <p id="description">Thank you for taking time to evaluate yourself</p>
+  <form id="survey-form">
+    <div id="form-label">
+    <label for="name" id="name-label">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" class="form-ip" required>
+    </div>
+     <div id="form-label">
+    <label for="email" id="email-label">Email</label>
+    <input type="email" id="email" required placeholder="Enter your email" class="form-ip" required>
+    </div>
+    <div id="form-label">
+    <label for="age" id="number-label">Age</label>
+    <input type="number" id="number" min="12" max="90" required placeholder="Age" class="form-ip" class="form-ip">
+  </div>
+    <div id="form-label">
+    <label for="occupation">What do you do for a living?</label>
+  </div>
+    <select id="dropdown" name="occupation" required class="form-ip">
+      <option disabled selected value>Select role in society</option <option>Engineer</option>
+      <option>Businessman</option>
+      <option>Freelancer</option>
+      <option>Student</option>
+    </select>
+    <div id="form-label">
+    <p>How would you say your life is going?</p>
+  </div>
+    <div id="form-label">
+  <label>
+      <input type="radio" name="rating" value="Awesome">
+      Awesome
+    </label>
+  </div>
+  <div id="form-label">
+    <label>
+      <input type="radio" name="rating" value="OK">
+      OK
+    </label>
+  </div>
+  <div id="form-label">
+    <label>
+      <input type="radio" name="rating" value="Sed">
+      Sed
+    </label>
+  </div>
+ <div id="form-label">
+   <p>How are you coping with it?</p>
+    </div>
+  <div id="form-label">
+    <label>
+      <input type="checkbox" name="support" value="Video Games">
+      Video Games
+    </label>
+    </div>
+    <div id="form-label">
+    <label>
+      <input type="checkbox" name="support" value="Support from Family">
+      Support from Family
+    </label>
+    </div>
+    <div id="form-label">
+    <label>
+      <input type="checkbox" name="support" value="Too Busy">
+      Too busy to think about it
+    </label>
+    </div>
+  <div id="form-label">
+    <p>Describe yourself:</p>
+  </div>
+    <textarea id="describe" rows="4" columns="50" class="txt" placeholder="In simple words, who are you?">
+    </textarea>
+  <div id="form-label">
+    <button type="submit" id="submit" value="Submit">Submit</button>
+  </div>
+  </form>
+  </div>
+</body>
+</html>
